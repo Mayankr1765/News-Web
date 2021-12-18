@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "jharkhand-today-news"
+  },
+  "targets": {
+    "jharkhand-today-news": {
+      "hosting": {
+        "jhar": [
+          "jharkhand-today-news"
+        ]
+      }
+    }
+  }
+}

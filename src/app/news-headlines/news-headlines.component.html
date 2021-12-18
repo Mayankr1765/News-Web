@@ -1,0 +1,8 @@
+<div class="card" style="width: 28rem; margin-left: 400px; margin-top: 50px;">
+    <div class="card-header" style="background-color: beige; color: red;">
+      <b>Top News Headline For Our Viewers</b>
+    </div>
+    <ul class="list-group list-group-flush"  *ngFor= " let n of news.slice().reverse()">
+      <li class="list-group-item" (click)="onClickOpen()" style="position: relative;" >{{ n.headline }}</li>
+    </ul>
+  </div>

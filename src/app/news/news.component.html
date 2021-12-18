@@ -1,0 +1,15 @@
+<div class="text-center" *ngFor="let n of news.slice().reverse()" >
+    <div class="card" >
+        <div class="text-center" style="position: relative;" (click)="onNewsClick(n)">
+            <img src={{n.imageFile}} class="rounded" alt="..." width="500px" height="400px">
+        </div>
+        
+        <div class="container">
+            <h1>{{n.headline }}</h1>
+            <h3>{{ n.description }}</h3>
+
+        </div>
+        
+    </div>
+    
+  </div>

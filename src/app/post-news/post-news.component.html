@@ -1,0 +1,31 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <!-- Name input -->
+    <!-- <div class="form-outline mb-4">
+      <input type="date" id="form4Example1" ngModel name="dat" class="form-control"  required/>
+      <label class="form-label" for="form4Example1">Date</label>
+    </div> -->
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form4Example2" ngModel name="headline" class="form-control"   required/>
+      <label class="form-label" for="form4Example2">Headline</label>
+    </div>
+  
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <textarea class="form-control" id="form4Example3" ngModel name="description" rows="4"   required></textarea>
+      <label class="form-label" for="form4Example3">Message</label>
+    </div>
+
+    <!-- <div class="mb-3">
+        <label for="formFile" class="form-label" ngModel name="imageFile">Default file input example</label>
+        <input class="form-control" type="file" id="formFile" (change="onFileSelected($event)")>
+      </div> -->
+  
+    <!-- Checkbox -->
+    
+  
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4" [disabled]="!f.valid">Add News</button>
+    <!-- <button type="submit" (click)="onFetchNews()" class="btn btn-primary btn-block mb-4" >Fetch News</button> -->
+  </form>

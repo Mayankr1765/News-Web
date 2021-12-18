@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="class-body">
+        <form [formGroup]="newsForm" ngSubmit="onSubmit(newsForm.value)">
+            <div class="form-outline md-4 mt-3">
+              <label for="formGroupExampleInput">Headline </label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Headline" formControlName="headline">
+            </div>
+        
+        
+            <div class="form-outline mb-3 mt-3">
+              <label for="formGroupExampleInput2">Description</label>
+              <textarea type="text" class="form-control" id="formGroupExampleInput2" formControlName="description"></textarea>
+            </div>
+            <div class="text-center">
+                <img [src]="imgFile" width="350px" height="250px">
+            </div>
+        
+            <div class="mb-3 mt-3">
+                <label for="formFile" class="form-label" >Default file input example</label>
+                <input class="form-control" type="file" accept="image/*" id="formFile" formControlName="imageFile" (change)="showPrev($event)">
+              </div>
+        
+              <button type="submit" class="btn btn-primary btn-block mb-4 mt-3 col-ml-12" (click)="onSubmit(newsForm.value)">Add News</button>
+              </form>
+        
+         
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
